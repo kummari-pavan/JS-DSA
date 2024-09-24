@@ -1,0 +1,16 @@
+Stacks:
+------
+Why we use: A stack follows the Last In, First Out (LIFO) principle. It is used in scenarios where we need to reverse elements or go back to a previous state, like undo operations in editors.
+
+Advantages:
+
+Useful in backtracking algorithms (e.g., maze solving, undo operations).
+Efficient for managing function calls (recursion).
+Simple to implement using arrays.
+
+Example:
+
+let stack = [];
+stack.push(10);  // Add elements
+stack.push(20);
+console.log(stack.pop());  // Remove and return the last element (20)

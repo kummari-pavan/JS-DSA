@@ -1,0 +1,32 @@
+Objects:
+--------
+Objects are used to store key-value pairs. They provide a way to structure data and group related values together, such as the 
+ of an entity.
+
+Advantages:
+----------
+
+Flexible and dynamic for storing any data type.
+Makes data more descriptive with key-value pairs.
+Easy to modify, add, or remove properties.
+
+Example:
+---------
+let person = {
+    name: 'Pavan',
+    age: 20,
+    job: 'Developer'
+};
+console.log(person.name);  // Access property using key
+
+
+Disadvantages:
+-------------
+
+1.No Indexing
+
+2.Overhead in Memory: Storing key-value pairs increases memory overhead compared to arrays, which only store values.
+3.Lack of Order:      In JavaScript, objects don’t guarantee order in key-value pairs.
+4.Slower Operations:  Object operations (insertion, deletion) can be slower compared to arrays due to hashing and key-value lookups.
+5.Difficulty with Iteration: Iterating over an object requires special loops (like for...in), which isn't as straightforward as arrays.
+6.Limited Methods:    Fewer built-in methods for manipulation compared to arrays.

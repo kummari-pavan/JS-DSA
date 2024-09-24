@@ -1,0 +1,10 @@
+queues:
+------
+A queue follows the First In, First Out (FIFO) principle. It is used in systems where order matters, like task scheduling, or
+ handling requests in web servers.
+
+Advantages:
+-----------
+Effective in scenarios where order is important like printers, task scheduling
+Simple to implement using arrays.
+Manages waiting line systems effectively.

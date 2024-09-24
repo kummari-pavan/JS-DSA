@@ -1,0 +1,29 @@
+Arrays: Arrays are used to store multiple values in a single variable, enabling easy access and manipulation of data in a sequence.
+        They are useful when you need to store lists of elements.
+    
+Advantages:
+-----------
+
+Easy access to elements by index.
+Supports many built-in methods for manipulationlike push(), pop(), shift(), unshift(), etc
+Dynamic sizing in JavaScript we can add or remove elements easily.
+
+Example:
+
+let Top_comp = ['apple', 'google', 'Microsoft'];
+Top_comp.push('Microsoft');  // Adds 'Microsoft' at the end
+console.log(Top_comp);
+
+Disadvantages:
+--------------
+
+Fixed Indexing: Accessing elements by index is fast, but inserting/removing elements at the beginning or middle can be slow 
+                due to re-indexing.
+Memory Consumption: In JavaScript, arrays are dynamic, but they can consume more memory compared to some other data structures.
+
+Homogeneous Assumption: Though arrays in JavaScript can store multiple types, many languages assume arrays to be of a single type.
+
+Inefficient Searching: Searching for an element (especially in an unsorted array) requires scanning the entire array, which can be
+                       slow for large datasets.
+No Key-Value Pair Support: Arrays lack the ability to map values to specific keys, which makes storing related data tricky 
+                           compared to objects.

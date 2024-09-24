@@ -1,0 +1,15 @@
+Strings:
+-------
+Strings represent sequences of characters and are used to manipulate and handle textual data. JavaScript provides several methods 
+for string manipulation.
+
+Advantages:
+-----------
+Flexible for handling text and character data.
+Provides various built-in methods for modification (slice(), split(), concat(), etc.).
+Can be easily iterated over like arrays.
+
+Example:
+--------
+let greeting = 'Hello, world!';
+console.log(greeting.slice(0, 5));  // Output: Hello

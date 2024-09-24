@@ -1,0 +1,5 @@
+Data Structures and Algorithms:
+-------------------------------
+Is a Formate to Organize ,manage and Store a Data in the way that allows efficient access and Modifications 
+More Simply, a data structure is a collection of data values, the relationships among them, and the functions
+or operations that can be applied to that data.
