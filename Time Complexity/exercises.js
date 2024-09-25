@@ -1,3 +1,4 @@
+//Order One Time COmplexity
 function FirstElement(a) {
     return a[0];
 }

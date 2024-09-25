@@ -5,7 +5,7 @@ Time and Space Complexity :
 What is Time Complexity?
 ------------------------
 We can solve a problem using different logic and different codes. Time complexity basically helps to judge different codes and 
-also helps to decide which code is better. In an interview, an interviewer generally judges a code by its time complexity.
+also helps to decide which code is better. 
 
 Now, the term, time complexity, seems that it is referring to the time taken by a machine to execute a particular code. But in 
 real life, Time complexity does not refer to the time taken by the machine to execute a particular code. 
