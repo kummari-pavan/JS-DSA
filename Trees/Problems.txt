@@ -1,0 +1,25 @@
+Trees Problems:
+---------------
+Introduction to Trees
+
+2.Binary Tree Representation in JavaScript
+
+3.Binary Tree Traversals in Binary Tree
+
+4.Preorder Traversal of Binary Tree
+
+5.Inorder Traversal of Binary Tree
+
+6.Post-order Traversal of Binary Tree
+
+7.Level order Traversal / Level order traversal in spiral form
+
+8.Iterative Preorder Traversal of Binary Tree
+
+9.Iterative Inorder Traversal of Binary Tree
+
+10.Post-order Traversal of Binary Tree using 2 stack
+
+11.Post-order Traversal of Binary Tree using 1 stack
+
+12.Preorder, Inorder, and Postorder Traversal in one Traversal
