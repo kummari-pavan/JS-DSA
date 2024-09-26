@@ -60,5 +60,5 @@ let found = a4.indexOf(20);  // Requires scanning the array
 console.log(found);  // Output: 2
 
 //Example 5: Arrays can't map key-value pairs.
-
+ 
 let a5 = ['apple', 'google', 'Microsoft'];  // Can't associate 'apple' with a specific value like objects do.
