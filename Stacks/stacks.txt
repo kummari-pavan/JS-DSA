@@ -10,7 +10,7 @@ Efficient for managing function calls (recursion).
 Simple to implement using arrays.
 
 Example:
-
+---------
 let stack = [];
 stack.push(10);  // Add elements
 stack.push(20);
