@@ -10,6 +10,6 @@ Provides various built-in methods for modification (slice(), split(), concat(), 
 Can be easily iterated over like arrays.
 
 Example:
---------
+-------- 
 let greeting = 'Hello, world!';
 console.log(greeting.slice(0, 5));  // Output: Hello
