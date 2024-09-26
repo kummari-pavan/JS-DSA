@@ -5,7 +5,6 @@ let person = {
 };
 console.log(person.name);
 
-
 // Example 1: Create and Access Object Properties
 
 let user = { name: 'PAVAN', age: 25 };
