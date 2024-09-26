@@ -1,6 +1,7 @@
 Stacks:
 ------
-Why we use: A stack follows the Last In, First Out (LIFO) principle. It is used in scenarios where we need to reverse elements or go back to a previous state, like undo operations in editors.
+Why we use: A stack follows the Last In, First Out (LIFO) principle. It is used in scenarios where we need to reverse elements or go 
+back to a previous state, like undo operations in editors.
 
 Advantages:
 
@@ -14,3 +15,20 @@ let stack = [];
 stack.push(10);  // Add elements
 stack.push(20);
 console.log(stack.pop());  // Remove and return the last element (20)
+
+
+push(): Insert the element in the stack.
+
+pop(): Remove and return the topmost element of the stack.
+
+top(): Return the topmost element of the stack
+
+size(): Return the number of remaining elements in the stack.
+
+Approach:
+
+Declare an array of particular size.
+Define a variable “Top” and initialize it as -1.
+push(x): insert element is the array by increasing top by one.
+pop(): check whether top is not equal to -1 if it is so, return top and decrease its value by one.
+size(): return top+1.

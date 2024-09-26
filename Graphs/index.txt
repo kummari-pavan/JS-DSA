@@ -1,0 +1,18 @@
+Learning Path for Graphs in JavaScript:
+-----------------------------------------
+Step	Concept/Topic
+----    -------------
+1		What is a Graph?
+2		Types of Graphs (Directed, Undirected, Weighted, Unweighted)
+3		Graph Terminology (Vertex, Edge, Path, Cycle, etc.)
+4		Graph Representation (Adjacency Matrix vs Adjacency List)
+5		Implementing Graph Using Adjacency List in JavaScript
+6		Adding and Removing Edges in a Graph
+7		Depth First Search (DFS)
+8		Breadth First Search (BFS)
+9		Detecting Cycles in a Graph (DFS Approach)
+10		Shortest Path Algorithms (Dijkstra's Algorithm)
+11		Minimum Spanning Tree (Kruskal’s and Prim’s Algorithms)
+12		Topological Sorting
+13		Graph Traversals on Weighted Graphs
+14		Applications of Graphs in Real Life

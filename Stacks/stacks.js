@@ -9,8 +9,8 @@ console.log(stack[stack.length - 1]);  // Output: 15 (top element)
 
 // Example 3: Reverse a String Using Stack
 let str = 'hello';
-let s = str.split('');  // Convert string to array (stack-like)
-let reversedStr = s.reverse().join('');
+let s1 = str.split('');  // Convert string to array (stack-like)
+let reversedStr = s1.reverse().join('');
 console.log(reversedStr);  // Output: 'olleh'
 
 // Example 4: Stack for Balanced Parentheses
@@ -42,3 +42,56 @@ function undo() {
 performAction('First Action');
 performAction('Second Action');
 undo();  // Output: 'Undone: Second Action'
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+class Stack{
+    constructor(){
+        this.items=[];
+        this.temp_stack=[]
+    }  
+    push_ele(data){
+        this.items.push(data);
+    }
+    
+    pop_ele(){
+        
+        if(this.isEmpty()){
+            console.log("Stack Is Empty");
+        }
+        else{
+            let rmd_ele=this.items.pop();
+            this.temp_stack.push(rmd_ele);
+        }
+        
+    }
+    
+    isEmpty(){
+        
+           return this.items.length===0;
+           
+    }
+    
+    peek(){
+        if(this.isEmpty()){
+           console.log("Stack Is Empty");
+        }
+        else{
+            console.log(this.items[this.items.length-1]);
+        }
+    }
+    
+    display(){
+        console.log("stack items:" ,this.items.join(","))
+        console.log("temp_stack items:" ,this.temp_stack.join(","))
+    }
+   }
+   
+   let s=new Stack();
+   s.push_ele(10);
+   s.push_ele(20);
+   s.push_ele(130);
+   s.push_ele(150);
+   
+   s.pop_ele();
+   s.peek()
+   s.display();

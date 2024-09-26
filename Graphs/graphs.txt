@@ -1,0 +1,38 @@
+1.what is graph:
+----------------
+A Graph is a data structure that consists of two main components:
+
+Vertices (Nodes): These are the entities or points in the graph. Each point in the graph is called a vertex (or node).
+Edges: These are the connections between the vertices. An edge connects two vertices and represents a relationship between them.
+Key Points:
+Graphs can be used to model relationships between entities like social networks, road maps, or web page links.
+A graph can have no cycles (acyclic) or cycles (cyclic), meaning some nodes may connect back to previous nodes.
+
+
+Types of Graphs:
+----------------
+Directed Graph: In a directed graph, edges have a direction, indicating a one-way relationship between nodes (e.g., from node A to node B).
+Undirected Graph: In an undirected graph, edges have no direction, indicating a two-way relationship (e.g., node A connects to node B and vice versa).
+Weighted Graph: In a weighted graph, edges have weights or costs associated with them (e.g., the distance between two cities).
+Unweighted Graph: In an unweighted graph, all edges are treated as equal, without any weights or costs.
+
+Graph Terminology :
+-----------------
+Vertex (Node): A point in the graph representing an entity.
+Edge: A connection between two vertices.
+Path: A sequence of vertices connected by edges.
+Cycle: A path where the starting and ending vertices are the same.
+Degree: The number of edges connected to a vertex.
+Connected Graph: A graph where there’s a path between every pair of vertices.
+Disconnected Graph: A graph where some vertices are not connected by any path.
+Acyclic Graph: A graph without cycles.
+
+Graph Representation :
+--------------------
+
+Adjacency Matrix: A 2D array where rows and columns represent vertices, and matrix elements indicate whether an edge exists between 
+vertices (1 for an edge, 0 for no edge).
+
+Adjacency List: A list where each vertex stores a collection of its connected vertices (neighbors). This is more memory-efficient for 
+sparse graphs.
+

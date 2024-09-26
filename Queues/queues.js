@@ -26,3 +26,55 @@ while (tasks.length > 0) {
     console.log(`Processing: ${tasks.shift()}`);  // Process and remove
 }
 
+//------------------------------------------------------------------------------
+class Queue{
+    constructor(){
+        this.items=[];
+        this.temp_Queue=[];
+    }  
+    push_ele(data){
+        this.items.push(data);
+    }
+    
+    pop_ele(){
+        
+        if(this.isEmpty()){
+            console.log("Stack Is Empty");
+        }
+        else{
+            let rmd_ele=this.items.shift();
+            this.temp_Queue.push(rmd_ele);
+        }
+        
+    }
+    
+    isEmpty(){
+        
+           return this.items.length===0;
+           
+    }
+    
+    peek(){
+        if(this.isEmpty()){
+           console.log("Queue Is Empty");
+        }
+        else{
+            console.log(this.items[this.items.length-1]);
+        }
+    }
+    
+    display(){
+        console.log("Queue items:" ,this.items.join(","))
+        console.log("temp_Queue items:" ,this.temp_Queue.join(","))
+    }
+   }
+   
+   let s=new Queue();
+   s.push_ele(10);
+   s.push_ele(20);
+   s.push_ele(130);
+   s.push_ele(150);
+   
+   s.pop_ele();
+   s.peek()
+   s.display();

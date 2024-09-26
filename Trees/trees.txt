@@ -1,24 +1,4 @@
-Learning Path for Trees and BST in JavaScript
----------------------------------------------
-Step	Concept/Topic
-____    ______________
-1		What is a Tree?
-2		Binary Tree: Basic Structure
-3		Binary Search Tree (BST) Properties
-4		Tree Node Implementation in JavaScript
-5		Insertion in BST
-6		Search in BST
-7		Deletion in BST (3 Cases)
-8		Tree Traversals (In-order, Pre-order, Post-order, Level-order)
-9		Find Min/Max in BST
-10		Calculate Tree Height
-11		Balanced vs Unbalanced Trees
-12		Lowest Common Ancestor (LCA) in BST
-13		Convert Sorted Array to Balanced BST
-14		Check if a Tree is a Valid BST
-
-
-3.Binary Search Tree (BST) has the following key properties:
+1.Binary Search Tree (BST) has the following key properties:
 ---------------------------------------------------------
 Left Subtree Rule: The left subtree of a node contains only nodes with values less than the node's value.
 Right Subtree Rule: The right subtree of a node contains only nodes with values greater than the node's value.
