@@ -1,0 +1,10 @@
+1. Bubble Sort
+--------------
+Bubble Sort compares adjacent elements and swaps them if they're in the wrong order. It keeps doing this until the entire array is sorted.
+
+Steps:
+Start at the beginning of the array.
+Compare the first two elements. If the first is larger, swap them.
+Move to the next pair and repeat.
+After one pass, the largest element "bubbles" to the end.
+Repeat until the array is sorted.

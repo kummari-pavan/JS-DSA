@@ -1,0 +1,69 @@
+1.Pick a Pivot:
+-------------
+
+We pick a "pivot" element from the array. In your code, the last element of the array is chosen as the pivot:
+
+const pivot = arr[arr.length - 1]; // The last element is the pivot
+
+Divide the Array into Two Parts:
+--------------------------------
+We then divide the array into two parts:
+left: Contains elements smaller than the pivot.
+right: Contains elements larger than or equal to the pivot.
+We loop through the array (except the pivot) and compare each element to the pivot:
+
+const left = [];
+const right = [];
+
+for (let i = 0; i < arr.length - 1; i++) {
+  if (arr[i] < pivot) {
+    left.push(arr[i]); // Add to left if smaller than pivot
+  } else {
+    right.push(arr[i]); // Add to right if greater or equal to pivot
+  }
+}
+Recursively Sort the Left and Right Parts:
+
+We now recursively apply Quick Sort to both left and right arrays. This means we keep repeating the process of choosing a pivot, dividing 
+into left and right, until the array has only one or zero elements. Arrays with one or zero elements are already sorted.
+
+The recursion ensures that both left and right sub-arrays are sorted.
+
+return [...quickSort(left), pivot, ...quickSort(right)];
+This line joins the sorted left array, the pivot, and the sorted right array into one final sorted array.
+Simple Example with Your Input: [5, 3, 8, 4, 2]
+Let’s go through the process step by step with this input:
+
+Initial Input: [5, 3, 8, 4, 2]
+Choose Pivot: The pivot is the last element 2.
+Divide:
+left (elements smaller than 2): []
+right (elements greater than or equal to 2): [5, 3, 8, 4]
+Recursion:
+Apply Quick Sort to left (empty array) → returns [] (already sorted).
+Apply Quick Sort to right [5, 3, 8, 4].
+Now, for the sub-array [5, 3, 8, 4]:
+
+Choose Pivot: The pivot is 4.
+Divide:
+left (elements smaller than 4): [3]
+right (elements greater than or equal to 4): [5, 8]
+Recursion:
+Apply Quick Sort to left [3] → returns [3] (already sorted).
+Apply Quick Sort to right [5, 8].
+Now, for the sub-array [5, 8]:
+
+Choose Pivot: The pivot is 8.
+Divide:
+left (elements smaller than 8): [5]
+right (empty array): []
+Recursion:
+Apply Quick Sort to left [5] → returns [5] (already sorted).
+Apply Quick Sort to right (empty array) → returns [] (already sorted).
+Now, we combine everything back:
+
+left = [5], pivot = 8, right = [] → returns [5, 8].
+left = [3], pivot = 4, right = [5, 8] → returns [3, 4, 5, 8].
+Finally, combine with the first pivot 2:
+left = [], pivot = 2, right = [3, 4, 5, 8] → returns [2, 3, 4, 5, 8].
+Thus, the array is sorted!

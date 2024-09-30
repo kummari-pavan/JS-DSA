@@ -150,3 +150,115 @@ const main = () => {
 }
 
 main();
+
+
+//--------------------------------------------------------------------------------
+
+class Node{
+    constructor(data){
+        this.data=data;
+        this.next=null;
+    }
+}
+class LinkedList{
+    constructor(){
+        this.head=null;
+        this.size=0;
+    }
+    add(data){
+        let temp=new Node(data);
+        if(this.head===null){
+            this.head=temp;
+        }
+        else{
+            let curr=this.head;
+            while(curr.next!==null){
+                curr=curr.next;
+            }
+            curr.next=temp;
+        }
+        this.size++;
+    }
+    display_ll(){
+        let curr=this.head;
+        while(curr!==null){
+            console.log(curr.data);
+            curr=curr.next;
+        }
+    }
+    size_ll(){
+        console.log(this.size);
+    }
+    
+    add_beginning(ele){
+        let temp=new Node(ele); 
+        if(this.head===null){
+            this.head=temp
+        }
+        else{
+            temp.next=this.head;
+            this.head=temp
+        }
+    }
+    add_at_index(i,ele){
+        if(i===0){
+            this.add_beginning(ele);
+        }
+        else{
+            let count=0;
+            let temp=new Node(ele);
+            let curr=this.head
+            while(count<=i-2){
+                curr=curr.next;
+                count++;
+            }
+            temp.next=curr.next;
+            curr.next=temp;
+            
+            // if(count==i) {
+            //     temp.next=cur.next;
+            //     cur.next=temp;
+            //     return;
+            // }
+            // cur=cur.next;
+            // count++;
+        }
+    }
+    remove_ele(){
+        if(this.head===null){
+            console.log("List Is Empty")
+        }
+        else{
+            let curr=this.head;
+            while(curr.next.next!==null){
+                curr=curr.next
+            }
+            curr.next=null;
+        
+        }
+        this.size++;
+    }
+    
+    remove_first_ele(){
+        if(this.head===null){
+            console.log("List Is Empty")
+        }
+        else{
+            let curr=this.head;
+            this.head=this.head.next;
+            curr.next=null
+        }
+    }
+}
+
+let ll=new LinkedList();
+
+ll.add(10);
+ll.add(20);
+ll.add(30);
+ll.add(40);
+// ll.add_beginning(5)
+ll.add_at_index(2,25)
+
+ll.size_ll();
+ll.display_ll();
